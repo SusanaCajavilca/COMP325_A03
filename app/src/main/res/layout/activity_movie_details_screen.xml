@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E2328"
+    android:padding="16dp"
+    tools:context=".view.MovieDetailsScreenActivity">
+
+    <ImageView
+        android:id="@+id/imagePosterMovie2"
+        android:layout_width="255dp"
+        android:layout_height="379dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/no_poster_available"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/titleMovie2" />
+
+    <TextView
+        android:id="@+id/titleMovie2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textColor="#FED053"
+        android:textSize="32sp"
+        app:layout_constraintTop_toBottomOf="@id/imagePosterMovie2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/yearMovie2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year"
+        android:textColor="#f9f9f9"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/titleMovie2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/genreMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Genre"
+        android:textColor="#f9f9f9"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/titleMovie2"
+        app:layout_constraintStart_toEndOf="@id/yearMovie2"
+        app:layout_constraintEnd_toStartOf="@id/metascoreMovie"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/metascoreMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metascore"
+        android:textColor="#F5B301"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/titleMovie2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/directorMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Director"
+        android:textColor="#f9f9f9"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/yearMovie2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/runtimeMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Runtime"
+        android:textColor="#f9f9f9"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/yearMovie2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/plotMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plot"
+        android:textColor="#f9f9f9"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@id/directorMovie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/returnButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=" Return  "
+        app:backgroundTint="#FED053"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/addToFavButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Add to Fav"
+        app:backgroundTint="#FED053"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#1E2328"
+    tools:context=".view.RegisterScreenActivity">
+
+    <TextView
+        android:id="@+id/titleR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#FED053"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+
+    <EditText
+        android:id="@+id/regiEmail"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColorHint="#9D9797"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:background="@drawable/edit_text"
+        android:layout_marginBottom="16dp"/>
+
+
+    <EditText
+        android:id="@+id/regiPassword"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="#9D9797"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/edit_text"
+        android:layout_marginBottom="16dp"/>
+
+
+    <EditText
+        android:id="@+id/confirmRegiPassword"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:textColorHint="#9D9797"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/edit_text"
+        android:layout_marginBottom="16dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
+
+
+        <Button
+            android:id="@+id/registerUserButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            app:backgroundTint="#FED053"
+            android:textColor="@color/black"
+            android:layout_marginEnd="25dp"/>
+
+
+        <Button
+            android:id="@+id/goBacktoLoginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#FED053"
+            android:textColor="@color/black"
+            android:text="Go Back" />
+
+    </LinearLayout>
+
+</LinearLayout>
